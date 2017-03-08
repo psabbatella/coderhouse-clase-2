@@ -1,9 +1,151 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<meta charset="utf-8">
+	<title>Mi segundo sitio</title>
 </head>
 <body>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="servicios.html">Servicios</a></li>
+			<li><a href="productos.html">Productos</a></li>
+			<li><a href="contacto.html">Contacto</a></li>
+		</ul>
+	</nav>
+	<header>
+		<h1>Mi segundo sitio</h1>
+		<h4>Aprendiendo HTML5</h4>
+		<p>
+			Este es un texto texto y estamos aprendiendo etiquetas html5
+		</p>
+		<a href="https://www.google.com">Link a google</a>
+	</header>
 
+	<section>
+		<article>
+			<h2>Elemento 1</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			<button>Soy un botón</button>
+			<a href="http://www.pablosabbatella.com"><img src="http://findicons.com/files/icons/61/dragon_soft/512/user.png"></a>
+			<hr>
+		</article>
+
+		<article>
+			<h2>Elemento 2</h2>
+						<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			<img src="https://psyc2301.wikispaces.com/file/view/south_park_cartman-1045.jpg/134221761/south_park_cartman-1045.jpg">
+		</article>
+
+		<article>
+			<h2>Elemento 3</h2>
+						<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			<img src="https://pbs.twimg.com/profile_images/2589899568/Aul_IgLCMAEJakI.png">
+		</article>
+
+		<article>
+			<table>
+				<tr>
+					<th>Nombre</th>
+					<th>Nota 1</th>
+					<th>Nota 2</th>
+					<th>Promedio</th>
+				</tr>
+				<tr>
+					<td>Daniel</td>
+					<td>9</td>
+					<td>7</td>
+					<td>8</td>
+				</tr>
+				<tr>
+					<td>Laura</td>
+					<td>9</td>
+					<td>1</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>Simon</td>
+					<td>5</td>
+					<td>7</td>
+					<td>6</td>
+				</tr>
+			</table>
+		</article>
+	</section>
+
+	<section>
+		<h4>Formulario de contacto</h4>
+		<form method="POST" action="enviar.php" enctype="multipart/form-data">
+
+			<label for="nombre">Nombre:</label>
+			<input type="text" name="nombre" placeholder="Escribí tu nombre" required>
+
+			<br>
+
+			<label for="correo">Email:</label>
+			<input type="email" name="correo" placeholder="Escribí tu mail" required>
+
+			<br>
+
+			<label for="password">Contraseña:</label>
+			<input type="password" name="password" placeholder="contraseña" required>
+
+			<br>
+
+			<label for="provincia">Provincia:</label>
+			<select name="provincia">
+  				<option value="bsas">Buenos Aires</option>
+  				<option value="santafe">Santa Fe</option>
+ 				<option value="mendoza">Mendoza</option>
+  				<option value="ushuaia">Ushuaia</option>
+			</select>
+
+			<br>
+
+			<label for="entrega">Entrega:</label>
+			<input type="radio" name="entrega" value="delivery">Delivery
+  			<input type="radio" name="entrega" value="pickup">Pickup
+
+  			<br>
+
+  			<label for="comentarios">Comentarios:</label>
+  			<textarea name="comentarios">Dejanos tus comentarios</textarea>
+
+			<br>
+
+			<input type="checkbox" name="tyc" required>
+			<label for="tyc">Aceptar términos y condiciones</label>
+
+			<br>
+
+			<label for="adjunto">Adjunte CV:</label>
+			<input type="file" name="adjunto">
+
+			<br>
+			
+			<input type="submit" value="Enviar">
+		</form>
+	</section>
 </body>
 </html>
